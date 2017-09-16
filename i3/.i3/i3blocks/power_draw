@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+import subprocess as sp
+
+colors = {
+        "white": "#cccccc",
+        "yellow": "#ffff00",
+        "red": "#ff0000"
+        }
+
+def get_power_draw():
+    proc = sp.Popen(['cat', '/sys/class/power_supply/BAT0/power_now'], stdout=sp.PIPE)
+    output = proc.stdout.read()
+    wattage = int(output.decode().strip().split(" - ")[0])/10**6
+    return wattage
+
+def get_color(power_draw):
+    if power_draw < 8:
+        return colors["white"]
+    elif 8 <= power_draw < 11:
+        return colors["yellow"]
+    else:
+        return colors["red"]
+
+def check_ac_state():
+    f=open('/sys/class/power_supply/AC/online','r')
+    rvalue=int(f.read()[0])
+    f.close()
+    return rvalue
+
+def main():
+    if check_ac_state() == 0:
+        draw = get_power_draw()
+        color = get_color(draw)
+        print("{0:.1f} W".format(draw))
+        print("{0:.1f} W".format(draw))
+        print(color)
+
+if __name__=="__main__":
+    main()

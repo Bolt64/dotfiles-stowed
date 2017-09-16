@@ -1,0 +1,9 @@
+[user]
+	name = Sayantan Khan
+	email = bolt.khan@gmail.com
+[credential]
+	helper = cache --timeout=86400
+[core]
+	editor = vim
+[push]
+	default = simple

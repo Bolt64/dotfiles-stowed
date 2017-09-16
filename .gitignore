@@ -1,0 +1,12 @@
+# Stupid texmaker bak files
+*.bak
+*~
+.*~
+*.swp
+__pycache__
+*.pyc
+\#*\#
+emacs/.emacs.d/backup/
+emacs/.emacs.d/elpa/
+vim/.vim/plugged/
+vim/.vim/bundle/

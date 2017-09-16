@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ "$BLOCK_BUTTON" -eq 1 ]]; then
+    audtool playlist-reverse
+fi
+
+if [[ "$BLOCK_BUTTON" -eq 2 ]]; then
+    audtool playback-playpause
+fi
+
+if [[ "$BLOCK_BUTTON" -eq 3 ]]; then
+    audtool playlist-advance
+fi
+
+python ~/.i3/i3blocks/display_song.py

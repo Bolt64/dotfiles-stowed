@@ -1,0 +1,29 @@
+#!/usr/bin/python2
+
+import commands
+
+HIGH = 80
+LOW = 40
+
+def checkstate():
+	f=open('/sys/class/power_supply/AC/online','r')
+	rvalue=int(f.read()[0])
+	f.close()
+	return rvalue
+
+def getbatterystate():
+	rawb=commands.getoutput('acpi -b').split(', ')[1][0:-1]
+	rawb=rawb.strip('%')
+	return int(rawb)
+
+def main():
+    current_state = checkstate()
+    if current_state == 1 and getbatterystate() > HIGH:
+        print("DC\nDC\n#ffff00")
+    elif current_state == 0 and getbatterystate() < LOW:
+        print("CC\nCC\n#ffff00")
+    else:
+        print("")
+
+if __name__ == "__main__":
+    main()
