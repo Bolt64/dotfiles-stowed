@@ -46,6 +46,13 @@
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling    
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
+;; Fonts
+;; Set default font
+(set-face-attribute 'default nil
+                    :family "Source Code Pro"
+                    :height 110
+                    :weight 'normal
+                    :width 'normal)
 
 ;; Setting up history
 (savehist-mode 1)
