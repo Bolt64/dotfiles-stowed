@@ -1,7 +1,6 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/bolt/OrgMode/gradschool_app_2018/list_of_schools.org" . 4256)
- ("/home/bolt/dotfiles/bin/borg_backup.sh" . 11)
- ("/home/bolt/dotfiles/emacs.el" . 2168)
+(("/home/bolt/.emacs.d/elpa/goto-chg-20170917.1200/goto-chg-autoloads.el" . 1896)
+ ("/home/bolt/OrgMode/gradschool_app_2018/list_of_schools.org" . 4256)
  ("/home/bolt/.emacs.d/elpa/use-package-20170812.2256/use-package-autoloads.el" . 3907)
  ("/home/bolt/.emacs.d/elpa/bind-key-20161218.1520/bind-key-autoloads.el" . 2170)
  ("/home/bolt/.emacs.d/elpa/diminish-20170419.1036/diminish-autoloads.el" . 2268)
