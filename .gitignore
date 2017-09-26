@@ -8,5 +8,7 @@ __pycache__
 \#*\#
 emacs/.emacs.d/backup/
 emacs/.emacs.d/elpa/
+emacs/.emacs.d/history
+emacs/.emacs.d/places
 vim/.vim/plugged/
 vim/.vim/bundle/

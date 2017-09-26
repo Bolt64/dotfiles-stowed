@@ -37,6 +37,10 @@
 ;; Shorten yes no prompts
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Remap next and prev
+(global-set-key (kbd "<next>") 'move-end-of-line)
+(global-set-key (kbd "<prior>") 'move-beginning-of-line)
+
 ;; Setting up smooth scrolling
 
 (setq scroll-conservatively 4)
