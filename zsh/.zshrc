@@ -82,3 +82,6 @@ alias fix_term="export TERM=xterm-256color"
 
 # Keychain
 #eval $(keychain --eval --agents ssh id_rsa aur bitbucket github 2> /dev/null)
+
+# zsh syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
