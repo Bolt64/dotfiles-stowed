@@ -88,9 +88,13 @@
 
 (evil-leader/set-key
   "b" 'switch-to-buffer
+  "'" 'ibuffer
   "k" 'kill-buffer
   "c" 'evilnc-comment-or-uncomment-lines)
 
+;; ibuffer settings
+(setq ibuffer-expert t)
+(setq ibuffer-show-empty-filter-groups nil)
 
 ;; Setting up Org Mode
 ;(require 'org)
