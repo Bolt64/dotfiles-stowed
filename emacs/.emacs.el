@@ -90,7 +90,8 @@
 (evilnc-default-hotkeys)
 
 (evil-leader/set-key
-  "b" 'switch-to-buffer
+  ;"b" 'switch-to-buffer
+  "b" 'ibuffer
   "k" 'kill-buffer
   "c" 'evilnc-comment-or-uncomment-lines)
 
