@@ -41,6 +41,9 @@
 (global-set-key (kbd "<next>") 'move-end-of-line)
 (global-set-key (kbd "<prior>") 'move-beginning-of-line)
 
+; scroll bar disable
+(scroll-bar-mode -1)
+
 ;; Setting up smooth scrolling
 
 (setq scroll-conservatively 4)
