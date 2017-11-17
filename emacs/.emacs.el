@@ -37,6 +37,9 @@
 ;; Shorten yes no prompts
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Remove scroll bar
+(scroll-bar-mode -1)
+
 ;; Setting up smooth scrolling
 
 (setq scroll-conservatively 4)
@@ -185,7 +188,7 @@
  '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
-    (tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
+    (auto-complete-auctex tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
  '(save-place-mode t)
  '(show-paren-mode t)
  '(smooth-scrolling-mode t))
