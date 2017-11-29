@@ -67,7 +67,7 @@ bindsym $mod+Return exec terminator
 bindsym Mod1+Return exec terminator -x tmux -2 -u attach-session
 
 # start firefox
-bindsym $mod+b exec firefox
+#bindsym $mod+b exec firefox
  
 # Increasing and reducing brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
