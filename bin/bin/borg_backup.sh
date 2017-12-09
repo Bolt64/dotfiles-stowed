@@ -1,5 +1,5 @@
 #!/bin/sh
-REPOSITORY=/var/run/media/bolt/aaedbdd8-a511-4c01-bac6-8c41f582d94b/Backups
+REPOSITORY=/run/media/bolt/aaedbdd8-a511-4c01-bac6-8c41f582d94b/Backups
 
 borg create -v --progress --compression lzma,5      \
             --stats                                 \
