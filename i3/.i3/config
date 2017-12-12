@@ -87,7 +87,7 @@ bindsym Ctrl+Shift+Tab move scratchpad
 bindsym Ctrl+Tab scratchpad show
 
 # Shortcut for nautilus
-bindsym $mod+m exec nautilus
+bindsym $mod+m exec pcmanfm
 
 # Shortcut for rofi
 bindsym Ctrl+Shift+z exec rofi -lines 5 -modi "Rename workspace:~/bin/rename_workspace.py" -show Rename\ workspace -case-sensitive
@@ -243,6 +243,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Focus follows mouse
+focus_follows_mouse no
 
 # Miscellaneous
 
@@ -330,6 +332,7 @@ for_window [class="Keepassx2"] floating enable
 for_window [title="Tabs Outliner"] floating enable
 for_window [title="Item Description - Chromium"] floating enable
 for_window [class="Pinentry"] floating enable
+for_window [class="Pcmanfm"] floating enable
 
 # Borderless terminal and text editor
 for_window [class="Terminator"] border pixel 0
@@ -345,6 +348,7 @@ for_window [class="Chromium" title="Google Hangouts - bolt.khan@gmail.com" windo
 for_window [class="Gnome-system-monitor"] border pixel 0
 for_window [class="Zathura"] border pixel 0
 for_window [class="URxvt"] border pixel 0
+for_window [class="Pcmanfm"] border pixel 0
 
 # Force a window to a particular workspace
 assign [class="Firefox"] 1: Browser
