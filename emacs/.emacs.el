@@ -49,6 +49,9 @@
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling    
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
+;; Replace ding bell with visual alarm
+(setq visible-bell 1)
+
 ;; Fonts
 ;; Set default font
 (set-face-attribute 'default nil
