@@ -30,6 +30,8 @@
 (use-package org)
 (use-package neotree
     :bind ([f8] . neotree-toggle))
+(use-package markdown-mode)
+(use-package evil-markdown)
 
 ;; Backup files
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
@@ -184,7 +186,7 @@
  '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
-    (tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
+    (markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
  '(save-place-mode t)
  '(show-paren-mode t)
  '(smooth-scrolling-mode t))
