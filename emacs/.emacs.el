@@ -30,6 +30,8 @@
 (use-package org)
 (use-package neotree
     :bind ([f8] . neotree-toggle))
+(use-package markdown-mode)
+(use-package evil-markdown)
 
 ;; Backup files
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
