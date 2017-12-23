@@ -38,6 +38,9 @@ exec --no-startup-id unclutter --timeout 3 -b
 # Starting synapse
 exec --no-startup-id synapse -s
 
+# starting mail sync
+exec --no-startup-id /home/bolt/bin/mail_sync.sh
+
 # Keymap
 exec --no-startup-id /home/bolt/bin/xmap.sh
 
