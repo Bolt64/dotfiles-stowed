@@ -85,3 +85,7 @@ alias fix_term="export TERM=xterm-256color"
 
 # zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# fzf sourcing
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
