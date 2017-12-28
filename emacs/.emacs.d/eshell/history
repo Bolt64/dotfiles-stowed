@@ -19,3 +19,7 @@ cp SOP.tex academic_background.tex
 latexmk SOP.tex 
 latexmk SOP.tex 
 less build/SOP.log 
+cd .emacs.d/elisp/
+ls
+rm ido-conf
+ls
