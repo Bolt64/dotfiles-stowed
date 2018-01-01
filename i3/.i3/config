@@ -268,7 +268,8 @@ client.urgent           #EF0000 #900000 #ffffff #900000
 bar {
   status_command i3blocks -c ~/.i3/i3blocks.conf
   i3bar_command i3bar -t
-  font pango:DejaVu Sans Mono, Icons, Awesome 8
+  #font pango:DejaVu Sans Mono, Icons, Awesome 8
+  font pango: DejaVu Sans Mono, Icons, Awesome 8
   position top
   colors {
     separator  #393939
