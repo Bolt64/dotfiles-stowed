@@ -31,7 +31,6 @@
 (use-package neotree
     :bind ([f8] . neotree-toggle))
 (use-package markdown-mode)
-(use-package evil-markdown)
 
 ;; Backup files
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
@@ -130,6 +129,11 @@
 (setq org-src-fontify-natively t)
 
 (setq linum-format "%4d \u2502 ")
+
+;; Markdown config
+(add-hook 'markdown-mode-hook 'turn-on-flyspell)
+(add-hook 'markdown-mode-hook
+          (lambda () (local-set-key (kbd "<S-iso-lefttab>") 'dabbrev-expand)))
 
 ;; Haskell mode hooks
 ;; (add-hook 'haskell-mode-hook 'haskell-indent-mode)
