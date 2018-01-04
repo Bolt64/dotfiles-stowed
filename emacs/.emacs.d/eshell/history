@@ -1,7 +1,25 @@
 ipython
 source .bashrc
 ghci
+cd ..
 ls
+mv CUNY/ Ohio
+cd Penn State/
+cd Penn\ State/
 ls
-la
-ls -la
+echo $SHELL
+eshell
+ls
+echo $SHELL
+ll
+ls -l
+clear
+
+cp SOP.tex academic_background.tex
+latexmk SOP.tex 
+latexmk SOP.tex 
+less build/SOP.log 
+cd .emacs.d/elisp/
+ls
+rm ido-conf
+ls
