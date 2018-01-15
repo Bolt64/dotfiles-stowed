@@ -7,10 +7,11 @@ import json
 
 GIT_REPO_LIST = "/home/bolt/.tracked-repos.json"
 ROOT_DIR = "/home/bolt"
+EXCLUDED = [".vim", ".cargo", ".fonts"]
 
-
-def get_git_repos(source_dir):
+def get_git_repos(source_dir, excluded=EXCLUDED):
     for root, dirs, _ in walk(source_dir, topdown=True):
+        dirs[:] = [d for d in dirs if d not in excluded]
         if ".git" in dirs:
             yield root
             dirs[:] = []
@@ -44,10 +45,11 @@ def check_committed(git_repo):
 def main(update=False):
     if not update:
         repo_list = get_repo_list(GIT_REPO_LIST)
-        uncommitted = list(filter(lambda x: not check_committed(x), repo_list))
-        print("The following repositories have uncommitted changes:")
-        for repo in uncommitted:
-            print(repo)
+        for repo in repo_list:
+            if not check_committed(repo):
+                print("{0}: \033[91mUncommitted changes\033[0m".format(repo))
+            else:
+                print("{0}: \033[92mAll changes committed\033[0m".format(repo))
     elif update:
         update_repo_list(GIT_REPO_LIST)
 
