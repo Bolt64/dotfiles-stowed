@@ -3,6 +3,7 @@
 from os import walk, chdir
 from subprocess import run
 import json
+import git
 
 
 GIT_REPO_LIST = "/home/bolt/.tracked-repos.json"
@@ -32,14 +33,7 @@ def get_repo_list(repo_list_file):
 
 
 def check_committed(git_repo):
-    chdir(git_repo)
-    command = ["git", "diff-index", "--quiet", "HEAD", "--"]
-    return_code = run(command).returncode
-    assert return_code in [0, 1], """Not a git repository."""
-    if return_code == 1:
-        return False
-    elif return_code == 0:
-        return True
+    return not git.Repo(git_repo).is_dirty(untracked_files=True)
 
 
 def main(update=False):
