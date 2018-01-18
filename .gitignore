@@ -10,5 +10,6 @@ emacs/.emacs.d/backup/
 emacs/.emacs.d/elpa/
 emacs/.emacs.d/history
 emacs/.emacs.d/places
+emacs/.emacs.d/recentf
 vim/.vim/plugged/
 vim/.vim/bundle/
