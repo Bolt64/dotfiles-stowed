@@ -2,7 +2,7 @@
 
 import commands
 
-HIGH = 80
+HIGH = 60
 LOW = 40
 
 def checkstate():
