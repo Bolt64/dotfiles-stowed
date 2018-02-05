@@ -1,6 +1,6 @@
 #!/bin/bash
 
-i3lock -d -i /home/bolt/Pictures/lock_screen.png
+i3lock -d -i /home/sayantan/Pictures/lock_screen.png
 #/home/bolt/bin/fancy_lock/lock
 
 #dbus-send --system --print-reply \

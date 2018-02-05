@@ -1,6 +1,6 @@
 #!/bin/bash
 
-i3lock -d -i /home/bolt/Pictures/lock_screen.png
+i3lock -d -i /home/sayantan/Pictures/lock_screen.png
 systemctl hibernate
 
 #dbus-send --system --print-reply \
