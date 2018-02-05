@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export GOPATH=\$HOME/.gopath
-export PATH="/home/bolt/.cabal/bin:/home/bolt/.local/bin:/home/bolt/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/home/sayantan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -70,9 +70,6 @@ export PATH="/home/bolt/.cabal/bin:/home/bolt/.local/bin:/home/bolt/bin:/usr/lib
 source $HOME/.bash_aliases
 export TERM=screen-256color
 alias fix_term="export TERM=xterm-256color"
-
-# OPAM configuration
-. /home/bolt/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # Proxy stuff
 #source $HOME/.current_proxy

@@ -4,7 +4,7 @@ set $mod Mod4
 ## Startup apps
 
 # Export dbus stuff (VERY IMPORTANT)
-exec --no-startup-id source /home/bolt/bin/get_dbus.sh i3
+exec --no-startup-id source /home/sayantan/bin/get_dbus.sh i3
 
 # Start dunst
 exec --no-startup-id dunst
@@ -12,10 +12,10 @@ exec --no-startup-id dunst
 #exec echo $DBUS_SESSION_BUS_ADDRESS >> .varlog
 
 # Proxy autoconf script
-#exec --no-startup-id /home/bolt/bin/proxy_switcher/proxy_autoconfig.py
+#exec --no-startup-id /home/sayantan/bin/proxy_switcher/proxy_autoconfig.py
 
 # FTP server
-#exec --no-startup-id /home/bolt/.ftp_python/bin/python Code/Code\ Snippets/ftp_server.py
+#exec --no-startup-id /home/sayantan/.ftp_python/bin/python Code/Code\ Snippets/ftp_server.py
 
 # Starting up gnome-settings-daemon
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings &
@@ -24,7 +24,7 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings &
 exec --no-startup-id nm-applet
 
 #Set wallpaper
-exec --no-startup-id feh --bg-fill /home/bolt/Pictures/wallpaper.png
+#exec --no-startup-id feh --bg-fill /home/sayantan/Pictures/wallpaper.png
 
 # Starting compton
 exec --no-startup-id compton
@@ -33,19 +33,16 @@ exec --no-startup-id compton
 exec --no-startup-id unclutter --timeout 3 -b
 
 # Starting kupfer
-#exec --no-startup-id /home/bolt/bin/kupfer.sh --no-splash
-
-# Starting synapse
-exec --no-startup-id synapse -s
+#exec --no-startup-id /home/sayantan/bin/kupfer.sh --no-splash
 
 # starting mail sync
-exec --no-startup-id /home/bolt/bin/mail_sync.sh
+exec --no-startup-id /home/sayantan/bin/mail_sync.sh
 
 # Keymap
-exec --no-startup-id /home/bolt/bin/xmap.sh
+exec --no-startup-id /home/sayantan/bin/xmap.sh
 
 # xset
-exec --no-startup-id /home/bolt/bin/xset_settings.sh
+exec --no-startup-id /home/sayantan/bin/xset_settings.sh
 
 # Starting tmux
 exec --no-startup-id (tmux -2 -u &)
@@ -57,24 +54,27 @@ exec --no-startup-id tmux kill-session -t 0
 ## Custom keyboard shortcuts
 
 # lock screen
-bindsym Ctrl+Mod1+l exec i3lock -d -i /home/bolt/Pictures/lock_screen.png
+bindsym Ctrl+Mod1+l exec i3lock -d -i /home/sayantan/Pictures/lock_screen.png
 
 # take screenshot
-bindsym Ctrl+Shift+P exec /home/bolt/bin/screenshot.sh
+bindsym Ctrl+Shift+P exec /home/sayantan/bin/screenshot.sh
 
 # toggle touchpad
-bindsym XF86Display exec --no-startup-id /home/bolt/bin/toggle_touchpad.py
+bindsym XF86Display exec --no-startup-id /home/sayantan/bin/toggle_touchpad.py
 
 # start a terminal
 bindsym $mod+Return exec terminator
 bindsym Mod1+Return exec terminator -x tmux -2 -u attach-session
 
+# start application launcher
+bindsym Mod1+space exec j4-dmenu-desktop --dmenu='rofi -i -dmenu'
+
 # start firefox
 #bindsym $mod+b exec firefox
  
 # Increasing and reducing brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 
 # Audio related
 bindsym XF86AudioRaiseVolume exec (pactl set-sink-volume `~/bin/toggle_pulseaudio_sinks.py -q` +2% && pkill -RTMIN+10 i3blocks) #increase sound volume
@@ -104,7 +104,7 @@ mode "power" {
     # These bindings trigger in the power mode only
     bindsym s mode "default";exec ~/bin/user_level_lock_and_suspend.sh
     bindsym r exec ~/bin/user_level_reboot.sh
-    bindsym l mode "default";exec i3lock -d -i /home/bolt/Pictures/xkcd_purity.png
+    bindsym l mode "default";exec i3lock -d -i /home/sayantan/Pictures/xkcd_purity.png
     bindsym b exec ~/bin/user_level_shutdown.sh
 
     # Back to normal

@@ -6,8 +6,8 @@ import json
 import git
 
 
-GIT_REPO_LIST = "/home/bolt/.tracked-repos.json"
-ROOT_DIR = "/home/bolt"
+GIT_REPO_LIST = "/home/sayantan/.tracked-repos.json"
+ROOT_DIR = "/home/sayantan"
 EXCLUDED = [".vim", ".cargo", ".fonts"]
 
 def get_git_repos(source_dir, excluded=EXCLUDED):
