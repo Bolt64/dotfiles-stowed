@@ -24,7 +24,7 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings &
 exec --no-startup-id nm-applet
 
 #Set wallpaper
-#exec --no-startup-id feh --bg-fill /home/sayantan/Pictures/wallpaper.png
+exec --no-startup-id feh --bg-fill /home/sayantan/Pictures/wallpaper.png
 
 # Starting compton
 exec --no-startup-id compton
@@ -73,8 +73,8 @@ bindsym Mod1+space exec j4-dmenu-desktop --dmenu='rofi -i -dmenu'
 #bindsym $mod+b exec firefox
  
 # Increasing and reducing brightness
-bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 
 # Audio related
 bindsym XF86AudioRaiseVolume exec (pactl set-sink-volume `~/bin/toggle_pulseaudio_sinks.py -q` +2% && pkill -RTMIN+10 i3blocks) #increase sound volume

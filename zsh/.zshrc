@@ -50,7 +50,6 @@ plugins=(command-not-found git perl pep8 pip pyenv python screen web-search)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export GOPATH=\$HOME/.gopath
 export PATH="/home/sayantan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
