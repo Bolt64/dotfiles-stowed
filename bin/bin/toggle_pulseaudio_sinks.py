@@ -4,7 +4,7 @@ import subprocess as sp
 import re
 from os import system
 
-sink_change_script = "/home/bolt/bin/change_pulseaudio_sink.sh"
+sink_change_script = "/home/sayantan/bin/change_pulseaudio_sink.sh"
 
 def get_separated_sink_output():
     proc = sp.Popen(['pacmd', 'list-sinks'], stdout=sp.PIPE)

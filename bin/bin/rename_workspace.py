@@ -3,7 +3,7 @@
 import json
 import subprocess as sp
 
-HISTORY = "/home/bolt/.workspace_name_history.json"
+HISTORY = "/home/sayantan/.workspace_name_history.json"
 TOP_N = 300
 
 
