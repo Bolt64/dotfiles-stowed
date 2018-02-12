@@ -27,9 +27,47 @@
       (lambda () 
         (setq TeX-command-default "LatexMk")))
 
+(defun proper-bracket (bracket)
+  (cond
+   ((string= "(" bracket)
+    (insert "\\left(\\right)")
+    (backward-char 8)
+   )
+   ((string= "{" bracket)
+    (insert "\\left{\\right}")
+    (backward-char 8)
+    )
+   ((string= "[" bracket)
+    (insert "\\left[\\right]")
+    (backward-char 8)
+   )
+  )
+)
+
+(defun proper-round-brace ()
+  (proper-bracket "(")
+  (interactive)
+  ()
+)
+
+(defun proper-curly-brace ()
+  (proper-bracket "{")
+  (interactive)
+  ()
+)
+
+(defun proper-square-brace ()
+  (proper-bracket "[")
+  (interactive)
+  ()
+)
+
 (add-hook 'LaTeX-mode-hook
       (lambda ()
         (evil-leader/set-key
           "s" 'LaTeX-section
           "m" 'TeX-insert-macro
-          "e" 'LaTeX-environment)))
+          "e" 'LaTeX-environment
+	  "9" 'proper-round-brace
+	  "[" 'proper-square-brace
+	  "{" 'proper-curly-brace)))
