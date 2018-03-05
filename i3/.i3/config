@@ -353,6 +353,7 @@ for_window [class="Gnome-system-monitor"] border pixel 0
 for_window [class="Zathura"] border pixel 0
 for_window [class="URxvt"] border pixel 0
 for_window [class="Pcmanfm"] border pixel 0
+for_window [class="calibre"] border pixel 0
 
 # Force a window to a particular workspace
 assign [class="Firefox"] 1: Browser
