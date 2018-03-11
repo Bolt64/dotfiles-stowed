@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/bolt/.offlineimap'
 let g:netrw_dirhist_2='/home/bolt/bin'
 let g:netrw_dirhist_3='/home/bolt/.weechat'
 let g:netrw_dirhist_4='/home/bolt'
 let g:netrw_dirhist_5='/home/bolt/.weechat'
 let g:netrw_dirhist_6='/home/bolt/.i3'
+let g:netrw_dirhist_7='/home/sayantan/bin'
