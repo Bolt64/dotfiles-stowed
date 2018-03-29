@@ -66,7 +66,7 @@
       (lambda ()
         (evil-leader/set-key
           "s" 'LaTeX-section
-          "m" 'TeX-insert-macro
+          "RET" 'TeX-insert-macro
           "e" 'LaTeX-environment
 	  "9" 'proper-round-brace
 	  "[" 'proper-square-brace

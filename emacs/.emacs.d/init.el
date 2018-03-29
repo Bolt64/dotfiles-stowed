@@ -49,6 +49,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(TeX-electric-math (quote ("$" . "$")))
  '(TeX-view-program-list (quote (("Zathura" "zathura %o"))))
  '(TeX-view-program-selection (quote ((output-pdf "Zathura"))))
  '(column-number-mode t)
