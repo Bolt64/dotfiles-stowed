@@ -71,7 +71,7 @@ alias ec="emacsclient -n -c"
 alias yoump3="youtube-dl --extract-audio --audio-format mp3 -l"
 
 # clean up files after installation
-alias cleanup="yes | sudo pacman -Scc && yes | trizen -Scc"
+alias cleanup="yes | trizen -Scc"
 
 # alias mutt
 alias mutt="neomutt"
