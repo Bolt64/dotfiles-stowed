@@ -73,8 +73,10 @@ bindsym Mod1+space exec j4-dmenu-desktop --dmenu='rofi -i -dmenu'
 #bindsym $mod+b exec firefox
  
 # Increasing and reducing brightness
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+#bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessDown exec light -U 5%
+#bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessUp exec light -A 5%
 
 # Audio related
 bindsym XF86AudioRaiseVolume exec (pactl set-sink-volume `~/bin/toggle_pulseaudio_sinks.py -q` +2% && pkill -RTMIN+10 i3blocks) #increase sound volume
