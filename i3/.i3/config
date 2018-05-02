@@ -366,3 +366,6 @@ assign [class="Linuxdcpp"] 10: P2P Downloads
 # Scratchpad windows
 for_window [class="Audacious"] move scratchpad
 for_window [class="Audacious"] scratchpad show
+
+# This is to fix the weird VLC bug
+for_window [class="vlc" title="vlc"] move scratchpad
