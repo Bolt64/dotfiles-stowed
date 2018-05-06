@@ -13,6 +13,10 @@
 ; scroll bar disable
 (scroll-bar-mode -1)
 
+;; Disabling the menu bar
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
 ;; Setting up smooth scrolling
 (setq scroll-conservatively 4)
 (setq scroll-margin 2)
@@ -40,14 +44,14 @@
 (global-set-key (kbd "C-x <right>") 'windmove-right)
 
 ;; Custom themes
-(load-theme 'monokai t)
+(use-package monokai-theme
+  :ensure t
+  :config
+  (load-theme 'monokai t)
+  )
 
 ;; Font size
 (set-face-attribute 'default nil :height 105)
-
-;; Disabling the menu bar
-(menu-bar-mode -1)
-(tool-bar-mode -1)
 
 ;; Replace ding bell with visual alarm
 (setq visible-bell 1)

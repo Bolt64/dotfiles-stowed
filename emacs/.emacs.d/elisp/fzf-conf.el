@@ -1,2 +1,5 @@
-;; fzf shortcut
-(global-set-key (kbd "C-c f") 'fzf)
+;; Loads and configures fzf
+
+(use-package fzf
+  :ensure t
+  :bind ("C-c f" . fzf))

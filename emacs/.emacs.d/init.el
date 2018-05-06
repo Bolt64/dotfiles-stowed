@@ -19,30 +19,19 @@
 ;(setq use-package-always-ensure t)
 (require 'use-package)
 
-;; list of installed packages
-(use-package tex)
-(use-package auctex-latexmk)
-(use-package evil)
-(use-package evil-leader)
-(use-package evil-nerd-commenter)
-(use-package monokai-theme)
-(use-package org)
-(use-package neotree
-    :bind ([f8] . neotree-toggle))
-(use-package markdown-mode)
-(use-package helm)
-(use-package fzf)
+;; Package config files
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (load-library "emacs-general")
+(load-library "neotree-conf")
 (load-library "ido-conf")
 (load-library "evil-mode-conf")
 (load-library "ibuffer-conf")
 (load-library "helm-conf")
-(load-library "fzf-conf")
 (load-library "org-mode-conf")
 (load-library "markdown-mode-conf")
 (load-library "auctex-conf")
+;; (load-library "fzf-conf")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -59,7 +48,7 @@
  '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
-    (fzf helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
+    (helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
  '(save-place-mode t)
  '(show-paren-mode t)
  '(smooth-scrolling-mode t))

@@ -1,4 +1,10 @@
 ;; AUCTeX config
+
+(use-package tex
+  :ensure t)
+(use-package auctex-latexmk
+  :ensure t)
+
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq TeX-PDF-mode t)
