@@ -1,9 +1,7 @@
 ;; AUCTeX config
 
-(use-package tex
-  :ensure t)
-(use-package auctex-latexmk
-  :ensure t)
+(use-package tex)
+(use-package auctex-latexmk)
 
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
@@ -19,6 +17,7 @@
           (lambda () (local-set-key (kbd "<backtab>") 'dabbrev-expand)))
 (setq reftex-plug-into-AUCTeX t)
 ;(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
+(add-hook 'LaTeX-mode-hook 'yas-minor-mode)
 
 (eval-after-load "tex"
   '(add-to-list 'TeX-command-list

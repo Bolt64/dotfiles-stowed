@@ -23,3 +23,6 @@ cd .emacs.d/elisp/
 ls
 rm ido-conf
 ls
+cd
+ls
+cd temp/letter/

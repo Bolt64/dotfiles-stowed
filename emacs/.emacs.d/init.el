@@ -23,6 +23,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (load-library "emacs-general")
+(load-library "yasnippet-conf")
 (load-library "neotree-conf")
 (load-library "ido-conf")
 (load-library "evil-mode-conf")
@@ -48,7 +49,7 @@
  '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
-    (helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
+    (yasnippet helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
  '(save-place-mode t)
  '(show-paren-mode t)
  '(smooth-scrolling-mode t))

@@ -1,7 +1,6 @@
 ;; Helm mode config
 
-(use-package helm
-  :ensure t)
+(use-package helm)
 
 (require 'helm)
 (require 'helm-config)

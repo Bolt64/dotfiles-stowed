@@ -1,7 +1,6 @@
 ;; Setting up Org Mode
 
 (use-package org
-  :ensure t
   :config
   (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.35))
 
