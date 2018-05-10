@@ -54,3 +54,6 @@
 
 ;; Replace ding bell with visual alarm
 (setq visible-bell 1)
+
+;; Set proper frame title
+(setq-default frame-title-format '("%b [%m]"))
