@@ -14,3 +14,4 @@ emacs/.emacs.d/eshell/
 emacs/.emacs.d/ido.last
 vim/.vim/plugged/
 vim/.vim/bundle/
+vim/.vim/autoload/plug.vim*
