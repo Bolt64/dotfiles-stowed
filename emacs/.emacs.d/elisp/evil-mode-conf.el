@@ -4,7 +4,8 @@
   :config
   (global-evil-leader-mode)
   (evil-mode 1)
-  (add-to-list 'evil-emacs-state-modes 'neotree-mode 'interactive-haskell-mode)
+  (add-to-list 'evil-emacs-state-modes 'neotree-mode)
+  (add-to-list 'evil-emacs-state-modes 'dashboard-mode)
   )
 
 (use-package evil-nerd-commenter

@@ -1,0 +1,25 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/OrgMode/main.org")
+ (front-context-string . "** TODO Migrate ")
+ (rear-context-string . "g file\n\n* To Do\n")
+ (position . 55))
+("links.org"
+ (filename . "~/OrgMode/links.org")
+ (front-context-string . "w\n#+TITLE: Colle")
+ (rear-context-string . "STARTUP: overvie")
+ (position . 37))
+("notes.org"
+ (filename . "~/OrgMode/notes.org")
+ (front-context-string)
+ (rear-context-string . "ection of notes\n")
+ (position . 68))
+("emacs.d"
+ (filename . "~/.emacs.d/")
+ (front-context-string . "auto-save-list\n ")
+ (rear-context-string . "96 May 30 11:26 ")
+ (position . 241))
+)

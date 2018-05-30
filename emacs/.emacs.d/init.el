@@ -23,6 +23,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (load-library "emacs-general")
+(load-library "dashboard-conf")
 (load-library "yasnippet-conf")
 (load-library "neotree-conf")
 (load-library "ido-conf")
@@ -32,6 +33,7 @@
 (load-library "org-mode-conf")
 (load-library "markdown-mode-conf")
 (load-library "auctex-conf")
+(load-library "magit-conf")
 ;; (load-library "fzf-conf")
 
 (custom-set-variables
@@ -46,10 +48,16 @@
  '(fill-column 100)
  '(help-window-select t)
  '(org-M-RET-may-split-line (quote ((default))))
+ '(org-default-notes-file (concat org-directory "/notes.org"))
+ '(org-directory "~/OrgMode")
+ '(org-export-html-postamble nil)
+ '(org-hide-leading-stars t)
+ '(org-startup-folded (quote overview))
+ '(org-startup-indented t)
  '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
-    (yasnippet helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
+    (dashboard magit yasnippet helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
  '(save-place-mode t)
  '(show-paren-mode t)
  '(smooth-scrolling-mode t))
