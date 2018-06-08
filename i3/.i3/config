@@ -66,6 +66,9 @@ bindsym XF86Display exec --no-startup-id /home/sayantan/bin/toggle_touchpad.py
 bindsym $mod+Return exec terminator
 bindsym Mod1+Return exec terminator -x tmux -2 -u attach-session
 
+# start emacsclient
+bindsym $mod+b exec --no-startup-id emacsclient -n -c
+
 # start application launcher
 bindsym Mod1+space exec j4-dmenu-desktop --dmenu='rofi -i -dmenu'
 
