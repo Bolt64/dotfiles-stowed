@@ -35,6 +35,9 @@ exec --no-startup-id unclutter --timeout 3 -b
 # Starting kupfer
 #exec --no-startup-id /home/sayantan/bin/kupfer.sh --no-splash
 
+# Starting synapse
+#exec --no-startup-id synapse -s
+
 # starting mail sync
 exec --no-startup-id /home/sayantan/bin/mail_sync.sh
 
@@ -71,6 +74,7 @@ bindsym $mod+b exec --no-startup-id emacsclient -n -c
 
 # start application launcher
 bindsym Mod1+space exec j4-dmenu-desktop --dmenu='rofi -i -dmenu'
+#bindsym Mod1+space exec --no-startup-id synapse
 
 # start firefox
 #bindsym $mod+b exec firefox

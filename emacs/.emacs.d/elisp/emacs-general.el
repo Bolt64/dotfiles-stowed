@@ -21,7 +21,7 @@
 (setq scroll-conservatively 4)
 (setq scroll-margin 2)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
-(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling    
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
 ;; Setting up history
@@ -35,7 +35,10 @@
 (electric-pair-mode 1)
 
 ;; Remember position in file
-(save-place-mode 1) 
+(save-place-mode 1)
+
+;; Clean up whitespace before save
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Moving between panes
 (global-set-key (kbd "C-x <up>") 'windmove-up)
