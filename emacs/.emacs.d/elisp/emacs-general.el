@@ -17,6 +17,12 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+;; Revert buffer without confirmation
+(defun revert-buffer-no-confirm ()
+      "Revert buffer without confirmation."
+      (interactive) (revert-buffer t t))
+(global-set-key (kbd "<f5>") 'revert-buffer-no-confirm)
+
 ;; Setting up smooth scrolling
 (setq scroll-conservatively 4)
 (setq scroll-margin 2)
@@ -26,6 +32,9 @@
 
 ;; Setting up history
 (savehist-mode 1)
+
+;; Saving recent file list every four hour
+(run-at-time nil (* 4 60 60) 'recentf-save-list)
 
 ;; Enabling C-Tab completion
 ;(global-set-key (kbd "<tab>") 'dabbrev-expand)
