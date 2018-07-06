@@ -32,6 +32,9 @@ exec --no-startup-id compton
 # Starting unclutter
 exec --no-startup-id unclutter --timeout 3 -b
 
+# Starting guake
+exec --no-startup-id guake -e "tmux -2 -u attach-session"
+
 # Starting kupfer
 #exec --no-startup-id /home/sayantan/bin/kupfer.sh --no-splash
 
@@ -67,7 +70,7 @@ bindsym XF86Display exec --no-startup-id /home/sayantan/bin/toggle_touchpad.py
 
 # start a terminal
 bindsym $mod+Return exec terminator
-bindsym Mod1+Return exec terminator -x tmux -2 -u attach-session
+#bindsym Mod1+Return exec terminator -x tmux -2 -u attach-session
 
 # start emacsclient
 bindsym $mod+b exec --no-startup-id emacsclient -n -c
