@@ -2,21 +2,26 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored-marker"
- (filename . "~/OrgMode/main.org")
- (front-context-string . "** TODO Stuff to")
- (rear-context-string . "6-06 Wed 16:33]\n")
- (position . 1707))
+(("algebraic-geometry-notes.org"
+ (filename . "~/OrgMode/math/algebraic-geometry-notes.org")
+ (front-context-string . "\n* Problems\n** A")
+ (rear-context-string . "PTIONS: toc:nil\n")
+ (position . 262))
+("org-capture-last-stored-marker"
+ (filename . "~/OrgMode/keybindings.org")
+ (front-context-string . "** Magit status\n")
+ (rear-context-string . "ntent\n\n* Global\n")
+ (position . 48))
 ("org-refile-last-stored"
- (filename . "~/OrgMode/main.org")
- (front-context-string . "** TODO Stuff to")
- (rear-context-string . "6-06 Wed 16:33]\n")
- (position . 1707))
+ (filename . "~/OrgMode/keybindings.org")
+ (front-context-string . "** Magit status\n")
+ (rear-context-string . "ntent\n\n* Global\n")
+ (position . 48))
 ("org-capture-last-stored"
- (filename . "~/OrgMode/main.org")
- (front-context-string . "** TODO Stuff to")
- (rear-context-string . "g file\n\n* To Do\n")
- (position . 74))
+ (filename . "~/OrgMode/keybindings.org")
+ (front-context-string . "** Magit status ")
+ (rear-context-string . "* Uncategorized\n")
+ (position . 185))
 ("links.org"
  (filename . "~/OrgMode/links.org")
  (front-context-string . "w\n#+TITLE: Colle")

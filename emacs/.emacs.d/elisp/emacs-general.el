@@ -34,7 +34,7 @@
 (savehist-mode 1)
 
 ;; Saving recent file list every four hour
-(run-at-time nil (* 4 60 60) 'recentf-save-list)
+;; (run-at-time nil (* 4 60 60) 'recentf-save-list)
 
 ;; Enabling C-Tab completion
 ;(global-set-key (kbd "<tab>") 'dabbrev-expand)

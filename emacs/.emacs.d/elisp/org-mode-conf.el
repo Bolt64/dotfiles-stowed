@@ -38,6 +38,8 @@
 	   "* %? %^G \n%U" :prepend t)
 	  ("n" "Note" entry (file+headline "~/OrgMode/notes.org" "Uncategorized notes")
 	   "* %? %^G \n%u" :prepend t)
+	  ("k" "Keybinding" entry (file+headline "~/OrgMode/keybindings.org" "Uncategorized")
+	   "* %^{Description|Description} \n - Keybinding: %^{Keybinding|<undefined>} \n - Interactive function: %^{Function name|unknown} \n %?")
 	  ))
 
   (setq org-todo-keywords
