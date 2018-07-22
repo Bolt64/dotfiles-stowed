@@ -105,7 +105,7 @@ bindsym Ctrl+Tab scratchpad show
 bindsym $mod+m exec nautilus
 
 # Shortcut for rofi
-bindsym Ctrl+Shift+z exec rofi -lines 5 -modi "Rename workspace:~/bin/rename_workspace.py" -show Rename\ workspace -case-sensitive
+bindsym Ctrl+Shift+z exec rofi -lines 5 -modi "Rename workspace:~/bin/rename_workspace" -show Rename\ workspace
 #bindsym Ctrl+Shift+x exec rofi -modi "Sound sink:~/bin/pulseaudio_rofi_module.py" -show Sound\ sink -case-sensitive
 
 # Shortcut for suspend
