@@ -34,6 +34,7 @@
 (load-library "markdown-mode-conf")
 (load-library "auctex-conf")
 (load-library "magit-conf")
+(load-library "rust-mode-conf")
 ;; (load-library "fzf-conf")
 
 (custom-set-variables
