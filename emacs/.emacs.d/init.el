@@ -58,7 +58,7 @@
  '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
-    (dashboard magit yasnippet helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
+    (rust-mode dashboard magit yasnippet helm markdown-mode tex use-package neotree monokai-theme evil-nerd-commenter evil-leader auctex-latexmk)))
  '(save-place-mode t)
  '(show-paren-mode t)
  '(smooth-scrolling-mode t))
