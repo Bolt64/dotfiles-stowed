@@ -45,7 +45,7 @@ exec --no-startup-id guake -e "tmux -2 -u attach-session"
 #exec --no-startup-id /home/sayantan/bin/mail_sync.sh
 
 # Renaming workspace 1
-exec --no-startup-id i3-msg rename workspace 1 o 1:Browser
+exec --no-startup-id i3-msg rename workspace 1 to 1: Browser
 
 # Keymap
 exec --no-startup-id /home/sayantan/bin/xmap.sh

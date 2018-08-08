@@ -74,4 +74,8 @@ alias yoump3="youtube-dl --extract-audio --audio-format mp3 -l"
 alias cleanup="yes | trizen -Scc"
 
 # alias mutt
-alias mutt="neomutt"
+#alias mutt="neomutt"
+
+# Aliases for VPN
+alias up_vpn="sudo wg-quick up wgnet0"
+alias down_vpn="sudo wg-quick down wgnet0"
