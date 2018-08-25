@@ -13,10 +13,10 @@
  (rear-context-string . "ntent\n\n* Global\n")
  (position . 48))
 ("org-refile-last-stored"
- (filename . "~/OrgMode/keybindings.org")
- (front-context-string . "** Magit status\n")
- (rear-context-string . "ntent\n\n* Global\n")
- (position . 48))
+ (filename . "~/OrgMode/main.org")
+ (front-context-string . "** TODO Pay Nort")
+ (rear-context-string . "Finance related\n")
+ (position . 434))
 ("org-capture-last-stored"
  (filename . "~/OrgMode/keybindings.org")
  (front-context-string . "** Magit status ")
