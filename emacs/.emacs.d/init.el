@@ -46,7 +46,7 @@
  '(TeX-view-program-list (quote (("Zathura" "zathura %o"))))
  '(TeX-view-program-selection (quote ((output-pdf "Zathura"))))
  '(column-number-mode t)
- '(fill-column 80)
+ '(fill-column 100)
  '(help-window-select t)
  '(org-M-RET-may-split-line (quote ((default))))
  '(org-default-notes-file (concat org-directory "/notes.org"))

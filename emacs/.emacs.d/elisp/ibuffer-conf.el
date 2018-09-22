@@ -5,6 +5,7 @@
 (setq ibuffer-saved-filter-groups
       '(("home"
 	 ("Org" (mode . org-mode))
+	 ("LaTeX" (mode . latex-mode))
 	 ("emacs-config" (filename . ".emacs.d"))
 	 ;; ("code" (filename . "code"))
 	 ;; ("Magit" (mode . magit-status-mode))
