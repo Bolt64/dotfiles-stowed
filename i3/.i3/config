@@ -44,6 +44,9 @@ exec --no-startup-id guake -e "tmux -2 -u attach-session"
 # starting mail sync
 #exec --no-startup-id /home/sayantan/bin/mail_sync.sh
 
+# Starting syncthing
+exec --no-startup-id syncthing -no-browser
+
 # Renaming workspace 1
 exec --no-startup-id i3-msg rename workspace 1 to 1: Browser
 
@@ -370,6 +373,7 @@ for_window [class="Zathura"] border pixel 0
 for_window [class="URxvt"] border pixel 0
 for_window [class="Pcmanfm"] border pixel 0
 for_window [class="calibre"] border pixel 0
+for_window [title="Spotify"] border pixel 0
 
 # Force a window to a particular workspace
 assign [class="Firefox"] 1: Browser

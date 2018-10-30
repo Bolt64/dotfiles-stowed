@@ -1,6 +1,0 @@
-;; -*- emacs-lisp -*- <18/08/02 15:11:41 /home/sayantan/.emacs.d/tramp>
-;; Tramp connection history.  Don't change this file.
-;; You can delete it, forcing Tramp to reapply the checks.
-
-(((tramp-file-name "ssh" "sayantan" nil "linode-host" "1728" nil nil)
-  nil))
