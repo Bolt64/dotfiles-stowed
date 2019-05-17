@@ -66,8 +66,8 @@ exec --no-startup-id tmux kill-session -t 0
 ## Custom keyboard shortcuts
 
 # lock screen
-bindsym Ctrl+Mod1+l exec i3lock -d -i /home/sayantan/Pictures/lock_screen.png
-
+#bindsym Ctrl+Mod1+l exec i3lock -d -i /home/sayantan/Pictures/lock_screen.png
+bindsym Ctrl+Mod1+l exec /home/sayantan/bin/lock.sh
 # take screenshot
 bindsym Ctrl+Shift+P exec /home/sayantan/bin/screenshot.sh
 
