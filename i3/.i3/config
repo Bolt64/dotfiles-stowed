@@ -364,6 +364,7 @@ for_window [class="Emacs"] border pixel 0
 
 # Borderless Browsers
 for_window [class="Firefox" window_role="browser"] border pixel 0
+for_window [class="firefox" window_role="browser"] border pixel 0
 for_window [class="Chromium" window_role="browser"] border pixel 0
 for_window [class="Chromium" title="Google Hangouts - bolt.khan@gmail.com" window_role="app"] border pixel 0
 

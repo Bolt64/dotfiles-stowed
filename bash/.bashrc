@@ -114,6 +114,5 @@ if ! shopt -oq posix; then
 fi
 
 #export SCALA_HOME=~/.scala_binary
-export PATH=~/.scala_binary/bin:~/.local/bin/:~/.python_compiled/bin/:$PATH
 export TERM=xterm-256color
 source /usr/share/doc/pkgfile/command-not-found.bash
